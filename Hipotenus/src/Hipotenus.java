@@ -12,10 +12,10 @@ public class Hipotenus {
         System.out.println("3.Kenari giriniz. ");
         kenar3 = input.nextDouble();
         u = ((kenar1+kenar2+kenar3)/2);
-        cevre = (2 * u);
-        System.out.println("Ucgenin cevresi: "+ cevre);
+        //cevre = (2 * u);
+        //System.out.println("Ucgenin cevresi: "+ cevre);
         alan = (u * (u - kenar1) * (u - kenar2) * (u - kenar3) );
-        System.out.println("Ucgenin alani: " + alan);
+        System.out.println("Ucgenin alani: " + Math.sqrt(alan) );
     }
 }
 
