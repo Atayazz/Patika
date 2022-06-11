@@ -1,26 +1,31 @@
-    import java.util.Scanner;
-    public class hesapMakinesi {
+import java.util.Scanner;
 
-        public static void main(String[] args) {
+public class hesapMakinesi {
 
-            int a , b, c;
-            a = 10;
-            b = 15;
-            c = 5;
+    public static void main(String[] args) {
 
-           /* boolean kosul1 = (a==b);
-            boolean kosul2 = (a<=b);
-            boolean kosul3 = (a + c == b);
-            boolean sonuc1 = (a==b || a<=b);
-            System.out.println("sonucunuz dogrudur." kosul3);
-        */
-        if  {
-            System.out.println("Sonuc dogrudur.");
+        Scanner input = new Scanner(System.in);
+        int sayi1, sayi2;
+        int islem;
+        System.out.print("Birinci sayiyi giriniz: ");
+        sayi1 = input.nextInt();
+        System.out.print("Ikinci sayiyi giriniz: ");
+        sayi2 = input.nextInt();
+        System.out.println("1-Toplama \n2-Cikarma \n3-Carpma \n4-Bolme ");
+        islem = input.nextInt();
+
+        if (islem == 1) {
+            System.out.println("Isleminiz: Toplama");
+            System.out.println("Islem Sonucunuz: " + (sayi1 + sayi2));
+        } else if (islem == 2) {
+            System.out.println("Isleminiz: Cikarma");
+            System.out.println("Islem Sonucunuz: " + (sayi1 - sayi2));
+        } else if (islem == 3) {
+            System.out.println("Isleminiz: Carpma");
+            System.out.println("Islem Sonucunuz: " + (sayi1 * sayi2));
+        } else if (islem == 4) {
+            System.out.println("Isleminiz: Bolme");
+            System.out.println("Islem Sonucunuz: " + (sayi1 / sayi2));
         }
-        else {
-            System.out.println("Sonuc yanlistir.");
-            };
-
-
     }
 }
