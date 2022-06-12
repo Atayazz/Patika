@@ -111,7 +111,7 @@ public class burcbulanprog {
                         else
                             isError = true;
                         break;
-
+            default: isError = true;
 
                 }
         {
